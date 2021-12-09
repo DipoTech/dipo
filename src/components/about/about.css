@@ -1,0 +1,23 @@
+.sec {
+    background-color: rgb(55, 137, 243);
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sec > h3 {
+    color: #fff;
+}
+
+.vis {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vis1 {
+    width:'10px';
+    border: 1px solid #fff;
+}
