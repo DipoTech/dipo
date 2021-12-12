@@ -20,7 +20,7 @@ const HeroText = styled(Box)(({ theme }) => ({
 function Hero() {
   return (
     <>
-      <HeroSection>
+      <HeroSection id='home'>
         <HeroText>
           <h1>DIPO TECHNOLOGIES</h1>
         </HeroText>

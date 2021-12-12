@@ -1,6 +1,6 @@
 .sec {
     background-color: rgb(55, 137, 243);
-    min-height: 60vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,14 +10,37 @@
 
 .sec > h3 {
     color: #fff;
+    font-size: 2em;
+    padding-bottom: 60px;
 }
 
 .vis {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around !important;
+    align-items: center;
+    width: 100%;
 }
 
-.vis1 {
-    width:'10px';
+.vis2 {
+    width: 320px;
     border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.vis2 > div {
+    text-align: center;
+    padding: 3rem;
+}
+
+.vis2 > div > h4 {
+    color: rgb(55, 137, 243);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+}
+
+.about-title {
+    font-size: 2rem;
+    font-weight: 100;
 }

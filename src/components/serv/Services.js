@@ -25,7 +25,7 @@ const BoxGrid = styled(Box)(({ theme }) => ({
 function Services() {
   return (
     <Container>
-      <BoxSection sx={{ width: '100%', paddingTop: '60px' }}>
+      <BoxSection sx={{ width: '100%', paddingTop: '60px' }} id="service">
         <Grid container rowSpacing={6} columnSpacing={3}>
           <Grid item xs={6} sm={4}>
             <BoxGrid>

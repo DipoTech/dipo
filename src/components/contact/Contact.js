@@ -52,14 +52,16 @@ const IcoWrapper = styled(Box)(({ theme }) => ({
 
 function Contact() {
   return (
-    <Wrappr>
+    <div id="contact">
+
+    <Wrappr >
       <BoxWrapper>
         <h1>CONTACT</h1>
         <hr />
-        <p>
-          We'd <span>&#10084;</span> to help!
+        <p style={{fontSize: '2rem'}}>
+          We'd <span style={{fontSize: '2rem'}}>&#10084;</span> to help!
         </p>
-        <p>
+        <p style={{fontSize: '1.3rem', paddingBottom: '1rem'}}>
           We like to create thing with fun, open minded people. Feel free to say
           hello
         </p>
@@ -123,6 +125,7 @@ function Contact() {
         </Box>
       </ContactWrapper>
     </Wrappr>
+    </div>
   );
 }
 

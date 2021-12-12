@@ -8,11 +8,11 @@ import './about.css';
 
 function About() {
   return (
-    <div>
+    <div id="about">
       <div style={{ display: 'flex', alignItems: 'center' }}>
         <img src={img} alt="hello" width="650px" />
         <div>
-          <h3>About DIPO</h3>
+          <h3 className="about-title">About DIPO</h3>
           <p>
             DIPO Technologies is a technology and digital marketing agency with
             a focus in building custom software solutions like Web Applications,
@@ -43,29 +43,35 @@ function About() {
       <section className="sec">
         <h3>What We Stand For</h3>
         <div className="vis">
-          <div className="vis1">
-            <RemoveRedEyeOutlinedIcon />
-            <h4>Our Vision</h4>
-            <p>
-              To provide tailored growth experience for solo-entrepreneurs,
-              early stage start up and SMEs
-            </p>
+          <div className="vis2">
+            <div>
+              <RemoveRedEyeOutlinedIcon style={{fontSize: '3rem'}} />
+              <h4>Our Vision</h4>
+              <p>
+                To provide tailored growth experience for solo-entrepreneurs,
+                early stage start up and SMEs
+              </p>
+            </div>
           </div>
-          <div className="vis1">
-            <ModeStandbyOutlinedIcon />
-            <h4>Our Mission</h4>
-            <p>
-              To see businesses embrace technology in their day to day
-              activities and business processes
-            </p>
+          <div className="vis2">
+            <div>
+              <ModeStandbyOutlinedIcon style={{fontSize: '3rem'}} />
+              <h4>Our Mission</h4>
+              <p>
+                To see businesses embrace technology in their day to day
+                activities and business processes
+              </p>
+            </div>
           </div>
-          <div className="vis1">
-            <OnlinePredictionOutlinedIcon />
-            <h4>The big Idea</h4>
-            <p>
-              To have all major sectors by 2025 use technology to negotiate
-              their activities and improve business performance
-            </p>
+          <div className="vis2">
+            <div>
+              <OnlinePredictionOutlinedIcon style={{fontSize: '3rem'}} />
+              <h4>The big Idea</h4>
+              <p>
+                To have all major sectors by 2025 use technology to negotiate
+                their activities and improve business performance
+              </p>
+            </div>
           </div>
         </div>
       </section>

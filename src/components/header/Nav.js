@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import './nav.css';
 import { AppBar, Toolbar } from '@mui/material';
 import { styled } from '@mui/system';
+import { Link, animateScroll } from 'react-scroll'
 
 const NavWrapper = styled(Toolbar)(({ theme }) => ({
   display: 'flex',
@@ -18,6 +19,7 @@ const NavLinks = styled(Box)(({ theme }) => ({
 }));
 
 function Nav() {
+  animateScroll.scrollToTop()
   return (
     <Box>
       <AppBar position='fixed'>
@@ -25,16 +27,19 @@ function Nav() {
           <Box>LOGO</Box>
           <NavLinks>
             <div>
-              <p>Home</p>
+              <p className='nav_link'><Link to='home' spy={true} smooth={true}>Home</Link></p>
             </div>
             <div>
-              <p>Services</p>
+              <p className='nav_link'><Link to='service' spy={true} smooth={true}>Services</Link></p>
             </div>
             <div>
-              <p>About Us</p>
+              <p className='nav_link'><Link to='about' spy={true} smooth={true}>About Us</Link></p>
             </div>
             <div>
-              <p>Contact Us</p> 
+              <p className='nav_link'><Link to='contact' spy={true} smooth={true}>Contact Us</Link></p> 
+            </div>
+            <div>
+              <p className='nav_link'><Link to='career' spy={true} smooth={true}>Career</Link></p> 
             </div>
           </NavLinks>
         </NavWrapper>
