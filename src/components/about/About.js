@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import img from '../images/1.jpg';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import OnlinePredictionOutlinedIcon from '@mui/icons-material/OnlinePredictionOutlined';
@@ -7,11 +7,16 @@ import ModeStandbyOutlinedIcon from '@mui/icons-material/ModeStandbyOutlined';
 import './about.css';
 
 function About() {
+  const [selected, setSelectedState] = useState(true);
+
   return (
-    <div id="about">
-      <div style={{ display: 'flex', alignItems: 'center' }}>
+    <div id="about" style={{ paddingTop: '60px' }}>
+      <div
+        style={{ display: 'flex', alignItems: 'center' }}
+        className="about-tag"
+      >
         <img src={img} alt="hello" width="650px" />
-        <div>
+        <div className="slide-right">
           <h3 className="about-title">About DIPO</h3>
           <p>
             DIPO Technologies is a technology and digital marketing agency with
@@ -43,34 +48,48 @@ function About() {
       <section className="sec">
         <h3>What We Stand For</h3>
         <div className="vis">
-          <div className="vis2">
-            <div>
-              <RemoveRedEyeOutlinedIcon style={{fontSize: '3rem'}} />
-              <h4>Our Vision</h4>
-              <p>
-                To provide tailored growth experience for solo-entrepreneurs,
-                early stage start up and SMEs
-              </p>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <RemoveRedEyeOutlinedIcon style={{ fontSize: '3rem' }} />
+                <h4>Our Vision</h4>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  To provide tailored growth experience for solo-entrepreneurs,
+                  early stage start up and SMEs
+                </p>
+              </div>
             </div>
           </div>
-          <div className="vis2">
-            <div>
-              <ModeStandbyOutlinedIcon style={{fontSize: '3rem'}} />
-              <h4>Our Mission</h4>
-              <p>
-                To see businesses embrace technology in their day to day
-                activities and business processes
-              </p>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <ModeStandbyOutlinedIcon style={{ fontSize: '3rem' }} />
+                <h4>Our Mission</h4>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  To see businesses embrace technology in their day to day
+                  activities and business processes
+                </p>
+              </div>
             </div>
           </div>
-          <div className="vis2">
-            <div>
-              <OnlinePredictionOutlinedIcon style={{fontSize: '3rem'}} />
-              <h4>The big Idea</h4>
-              <p>
-                To have all major sectors by 2025 use technology to negotiate
-                their activities and improve business performance
-              </p>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <OnlinePredictionOutlinedIcon style={{ fontSize: '3rem' }} />
+                <h4>The big Idea</h4>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  To have all major sectors by 2025 use technology to negotiate
+                  their activities and improve business performance
+                </p>
+              </div>
             </div>
           </div>
         </div>

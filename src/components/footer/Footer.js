@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, styled } from '@mui/system';
+import EmailIcon from '@mui/icons-material/Email';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const BoxSection = styled(Box)(({ theme }) => ({
   minHeight: '50vh',
@@ -11,7 +13,7 @@ const BoxSection = styled(Box)(({ theme }) => ({
 
 function Footer() {
   return (
-      <Box sx={{background: '#0c0524', color: 'white'}}>
+      <Box sx={{background: '#71DFE7', color: '#fff'}}>
     <BoxSection>
       <Box>
         <h1 className="heading">Important Links</h1>
@@ -22,10 +24,10 @@ function Footer() {
       </Box>
       <Box>
         <h1  className="heading">Contact Us</h1>
-        <h3 style={{padding: '5px'}}>Email</h3>
-        <p style={{padding: '12px'}}>dipotechnologies@gmail.com</p>
-        <h3 style={{padding: '12px'}}>Location</h3>
-        <p style={{padding: '12px'}}>Jumbo Plaza Block 2, Parimentary Avenue</p>
+        {/* <h3 style={{padding: '5px'}}>Email</h3> */}
+        <div style={{padding: '12px', display: 'flex', alignItems: 'center'}}><EmailIcon /> dipotechnologies@gmail.com</div>
+        {/* <h3 style={{padding: '12px'}}>Location</h3> */}
+        <div style={{padding: '12px', display: 'flex', alignItems: 'center'}}><LocationOnIcon /> Jumbo Plaza Block 2, Parimentary Avenue</div>
       </Box>
       <Box>
         <h1 className="heading">Services We Offer</h1>
