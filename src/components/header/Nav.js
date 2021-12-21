@@ -31,9 +31,10 @@ function Nav() {
   // React.useEffect(() => {
    
   // }, []);
+  //#71DFE7
   return (
     <Box>
-      <AppBar position='fixed' style={{background:`${offSet > 40 ? '#71DFE7' : '#009DAE'}`}}>
+      <AppBar position='fixed' style={{background:`${offSet > 40 ? '#009DAE' : 'transparent'}`}}>
         <NavWrapper>
           <Box><img src={logo} alt="logo" style={{height: 35}} /></Box>
           <NavLinks>

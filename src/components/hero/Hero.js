@@ -13,13 +13,13 @@ const HeroSection = styled(Box)(({ theme }) => ({
   // zIndex: '1',
 }));
 
-const HeroText = styled(Box)(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  minHeight: '100vh',
-  justifyContent: 'center',
-  color: 'rgba(231, 214, 29, 1)'
-}));
+// const HeroText = styled(Box)(({ theme }) => ({
+//   display: 'flex',
+//   alignItems: 'center',
+//   minHeight: '100vh',
+//   justifyContent: 'center',
+//   color: 'rgba(231, 214, 29, 1)'
+// }));
 
 function Hero() {
   return (
