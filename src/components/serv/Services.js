@@ -8,105 +8,546 @@ import PixIcon from '@mui/icons-material/Pix';
 import MemoryIcon from '@mui/icons-material/Memory';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import CloudIcon from '@mui/icons-material/Cloud';
+import DoneIcon from '@mui/icons-material/Done';
+import Tilt from 'react-parallax-tilt';
 
-import './service.css'
+import './service.css';
 
 const BoxSection = styled(Box)(({ theme }) => ({
   minHeight: '100vh',
+  // background: '#FC997C'
+}));
+
+const BoxSectio = styled(Box)(({ theme }) => ({
+  // minHeight: '100vh',
+  background: '#C2FFF9',
 }));
 
 const BoxGrid = styled(Box)(({ theme }) => ({
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'center',
   textAlign: 'center',
+  borderRadius: '0 10px 10px 10px',
+  boxShadow: '0 2px 5px 0 rgba(0, 0, 0, 0.2)',
+  background: '#328ced',
+  borderTop: '1px solid rgba(255, 255, 255, 0.5)',
+  borderLeft: '1px solid rgba(255, 255, 255, 0.5)',
+  backdropFilter: 'blur(5px)',
+  // transition: '200ms transform ease-in-out',
+  // '&:hover': {
+  //   transform: 'translateY(0px)',
+  //   opacity: '1',
+  // },
 }));
 
 function Services() {
   return (
-    <Container>
-      <BoxSection sx={{ width: '100%', paddingTop: '60px' }}>
-        <Grid container rowSpacing={6} columnSpacing={3}>
-          <Grid item xs={6} sm={4}>
-            <BoxGrid>
-              <PersonalVideoIcon sx={{fontSize: '3rem'}}/>
-              <h2>ICT CONSULTANCY</h2>
-              <p className="para">
-                We consult for high-end technology implementation at clients’
-                site or implementation of new technology according to the
-                clients’ requirement or upgrading, enhancing the existing
-                facilities in the clients end with the new technology integrated
-                with the existing one.
-              </p>
-            </BoxGrid>
-          </Grid>
-          <Grid item xs={6} sm={4}>
-            <BoxGrid>
-              <LaptopIcon sx={{fontSize: '3rem'}}/>
-              <h2>SOFTWARE DEVELOPMENT</h2>
-              <p className="para">
-                DIPO TECHNOLOGIES offers scalable end-to-end application
-                development and management solutions from requirement analysis
-                for deployment and rollout.
-              </p>
-            </BoxGrid>
-          </Grid>
-          <Grid item xs={6} sm={4}>
-            <BoxGrid>
-              <PixIcon sx={{fontSize: '3rem'}}/>
-              <h2>HARDWARE SALES & SUPPORT SERVICES</h2>
-              <p className="para">
-                We offer servers, computers, computer accessories and services
-                by sourcing from local market and from international market as
-                well. Our team of experts is ready to serve you when you are
-                worried due to lack of confidence in “commitment of service”.
-              </p>
-            </BoxGrid>
-          </Grid>
-          <Grid item xs={6} sm={4}>
-            <BoxGrid>
-              <PhoneIphoneIcon sx={{fontSize: '3rem'}}/>
-              <h2>SECURE COMMUNICATIONS DESIGN</h2>
-              <p className="para">
-                Through the vast experiences by our directors, we provide design
-                and optimization services for public and private mobile network
-                operators throughout the Asia Pacific region. Our main expertise
-                involves design of RF cellular 2G/3G/4G/LTe networks as well as
-                Secure Tetra Networks for Public Security
-              </p>
-            </BoxGrid>
-          </Grid>
-          <Grid item xs={6} sm={4}>
-            <BoxGrid>
-              <MemoryIcon sx={{fontSize: '3rem'}}/>
-              <h2>MANAGED SERVICES</h2>
-              <p className="para">
-                DIPO TECHNOLOGIES has the expertise and experience to manage
-                an enabling infrastructure and applications and run outsourced
-                operations for large telecom operators smoothly. DIPO
-                TECHNOLOGIES's Managed Services offerings cover the entire array
-                of IT outsourcing services including networks, IT
-                infrastructure, applications and business processes. This
-                provides our customers the best of both worlds - control and
-                flexibility over their information systems without either the
-                pain or cost of running them.
-              </p>
-            </BoxGrid>
-          </Grid>
-          <Grid item xs={6} sm={4}>
-            <BoxGrid>
-              <CloudIcon sx={{fontSize: '3rem'}}/>
-              <h2>NETWORK & INFRASTRUCTURE SERVICES</h2>
-              <p className="para">
-                DIPO TECHNOLOGIES's services enable clients to identify,
-                develop, and implement the best-fit solutions that are equipped
-                to meet their changing business requirements
-              </p>
-            </BoxGrid>
-          </Grid>
-        </Grid>
-      </BoxSection>
-    </Container>
+    <BoxSectio>
+      <Container>
+        <div id="service">
+          <BoxSection sx={{ width: '100%' }}>
+            <Grid
+              container
+              rowSpacing={6}
+              columnSpacing={3}
+              style={{ paddingTop: '60px', paddingBottom: '30px' }}
+            >
+              <Grid item xs={12} sm={4}>
+              <Tilt
+                  tiltMaxAngleX={40}
+                  tiltMaxAngleY={40}
+                  perspective={1000}
+                  transitionSpeed={1000}
+                  scale={1.01}
+                  gyroscope={true}
+                >
+                <BoxGrid>
+                  <PersonalVideoIcon
+                    sx={{ fontSize: '3rem', alignSelf: 'center',color: 'white' }}
+                  />
+                  <h2 style={{color: '#FFE652'}}>ICT CONSULTANCY</h2>
+                  <div style={{ justifyContent: 'flex-start' }} className='hello'>
+                    <div
+                        className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Strategy Planning</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Assessment</p>
+                    </div>
+                    <div
+                     className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Procument</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Re-engeering Solutions</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Planning And Auditing</p>
+                    </div>
+                  </div>
+                </BoxGrid>
+                </Tilt>
+              </Grid>
+              <Grid item xs={12} sm={4}>
+                <Tilt
+                  tiltMaxAngleX={40}
+                  tiltMaxAngleY={40}
+                  perspective={1000}
+                  transitionSpeed={1000}
+                  scale={1.01}
+                  gyroscope={true}
+                >
+                  <BoxGrid>
+                    <LaptopIcon
+                      sx={{ fontSize: '3rem', alignSelf: 'center',color: 'white' }}
+                    />
+                    <h2 style={{color: '#FFE652'}}>SOFTWARE DEVELOPMENT</h2>
+                    <div
+                      style={{ justifyContent: 'flex-start' }}
+                      className="hello"
+                    >
+                      <div className="content">
+                        <DoneIcon
+                          sx={{
+                            marginLeft: '30px',
+                            marginRight: '10px',
+                            color: 'green',
+                            fontSize: '20px',
+                          }}
+                        />
+                        <p>Web Development</p>
+                      </div>
+                      <div className="content">
+                        <DoneIcon
+                          sx={{
+                            marginLeft: '30px',
+                            marginRight: '10px',
+                            color: 'green',
+                            fontSize: '20px',
+                          }}
+                        />
+                        <p>Application Development</p>
+                      </div>
+                      <div className="content">
+                        <DoneIcon
+                          sx={{
+                            marginLeft: '30px',
+                            marginRight: '10px',
+                            color: 'green',
+                            fontSize: '20px',
+                          }}
+                        />
+                        <p>Application Support</p>
+                      </div>
+                      <div className="content">
+                        <DoneIcon
+                          sx={{
+                            marginLeft: '30px',
+                            marginRight: '10px',
+                            color: 'green',
+                            fontSize: '20px',
+                          }}
+                        />
+                        <p>Application Intergration</p>
+                      </div>
+                      <div className="content">
+                        <DoneIcon
+                          sx={{
+                            marginLeft: '30px',
+                            marginRight: '10px',
+                            color: 'green',
+                            fontSize: '20px',
+                          }}
+                        />
+                        <p>Application Migration</p>
+                      </div>
+                    </div>
+                  </BoxGrid>
+                </Tilt>
+              </Grid>
+              <Grid item xs={12} sm={4}>
+              <Tilt
+                  tiltMaxAngleX={40}
+                  tiltMaxAngleY={40}
+                  perspective={1000}
+                  transitionSpeed={1000}
+                  scale={1.01}
+                  gyroscope={true}
+                >
+                <BoxGrid>
+                  <PixIcon sx={{ fontSize: '3rem', alignSelf: 'center',color: 'white' }} />
+                  <h2 style={{color: '#FFE652'}}>HARDWARE SALES & SUPPORT SERVICES</h2>
+                  <div style={{ justifyContent: 'flex-start' }} className='hello'>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Web Development</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Development</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Support</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Intergration</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Migration</p>
+                    </div>
+                  </div>
+                </BoxGrid>
+                </Tilt>
+              </Grid>
+              <Grid item xs={12} sm={4}>
+              <Tilt
+                  tiltMaxAngleX={40}
+                  tiltMaxAngleY={40}
+                  perspective={1000}
+                  transitionSpeed={1000}
+                  scale={1.01}
+                  gyroscope={true}
+                >
+                <BoxGrid>
+                  <PhoneIphoneIcon
+                    sx={{ fontSize: '3rem', alignSelf: 'center',color: 'white' }}
+                  />
+                  <h2 style={{color: '#FFE652'}}>SECURE COMMUNICATIONS DESIGN</h2>
+                  <div style={{ justifyContent: 'flex-start' }} className='hello'>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Web Development</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Development</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Support</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Intergration</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Migration</p>
+                    </div>
+                  </div>
+                </BoxGrid>
+                </Tilt>
+              </Grid>
+              <Grid item xs={12} sm={4}>
+              <Tilt
+                  tiltMaxAngleX={40}
+                  tiltMaxAngleY={40}
+                  perspective={1000}
+                  transitionSpeed={1000}
+                  scale={1.01}
+                  gyroscope={true}
+                >
+                <BoxGrid>
+                  <MemoryIcon sx={{ fontSize: '3rem', alignSelf: 'center',color: 'white' }} />
+                  <h2 style={{color: '#FFE652'}}>MANAGED SERVICES</h2>
+                  <div style={{ justifyContent: 'flex-start' }} className='hello'>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Web Development</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Development</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Support</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Intergration</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Migration</p>
+                    </div>
+                  </div>
+                </BoxGrid>
+                </Tilt>
+              </Grid>
+              <Grid item xs={12} sm={4}>
+              <Tilt
+                  tiltMaxAngleX={40}
+                  tiltMaxAngleY={40}
+                  perspective={1000}
+                  transitionSpeed={1000}
+                  scale={1.01}
+                  gyroscope={true}
+                >
+                <BoxGrid>
+                  <CloudIcon sx={{ fontSize: '3rem', alignSelf: 'center',color: 'white' }} />
+                  <h2 style={{color: '#FFE652'}}>NETWORK & INFRASTRUCTURE SERVICES</h2>
+                  <div style={{ justifyContent: 'flex-start' }} className='hello'>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Web Development</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Development</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Support</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Intergration</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Application Migration</p>
+                    </div>
+                  </div>
+                </BoxGrid>
+                </Tilt>
+              </Grid>
+            </Grid>
+          </BoxSection>
+        </div>
+      </Container>
+    </BoxSectio>
   );
 }
 

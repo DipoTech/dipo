@@ -1,0 +1,7 @@
+.nav_link {
+    cursor: pointer;
+}
+
+.active {
+    color: rgb(2, 64, 105);
+}
