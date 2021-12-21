@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import img from '../images/1.jpg';
 import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import OnlinePredictionOutlinedIcon from '@mui/icons-material/OnlinePredictionOutlined';
@@ -7,7 +7,6 @@ import ModeStandbyOutlinedIcon from '@mui/icons-material/ModeStandbyOutlined';
 import './about.css';
 
 function About() {
-  const [selected, setSelectedState] = useState(true);
 
   return (
     <div id="about" style={{ paddingTop: '60px' }}>
