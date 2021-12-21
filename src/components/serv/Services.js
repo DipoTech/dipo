@@ -54,8 +54,8 @@ function Services() {
             >
               <Grid item xs={12} sm={4}>
               <Tilt
-                  tiltMaxAngleX={40}
-                  tiltMaxAngleY={40}
+                  tiltMaxAngleX={22}
+                  tiltMaxAngleY={22}
                   perspective={1000}
                   transitionSpeed={1000}
                   scale={1.01}
@@ -67,6 +67,32 @@ function Services() {
                   />
                   <h2 style={{color: '#FFE652'}}>ICT CONSULTANCY</h2>
                   <div style={{ justifyContent: 'flex-start' }} className='hello'>
+                  <div
+                        className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Digital Marketing</p>
+                    </div>
+                    <div
+                        className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Digital Literacy</p>
+                    </div>
                     <div
                         className="content"
                     >
@@ -138,8 +164,8 @@ function Services() {
               </Grid>
               <Grid item xs={12} sm={4}>
                 <Tilt
-                  tiltMaxAngleX={40}
-                  tiltMaxAngleY={40}
+                  tiltMaxAngleX={22}
+                  tiltMaxAngleY={22}
                   perspective={1000}
                   transitionSpeed={1000}
                   scale={1.01}
@@ -209,14 +235,36 @@ function Services() {
                         />
                         <p>Application Migration</p>
                       </div>
+                      <div className="content">
+                        <DoneIcon
+                          sx={{
+                            marginLeft: '30px',
+                            marginRight: '10px',
+                            color: 'green',
+                            fontSize: '20px',
+                          }}
+                        />
+                        <p>Web Hosting / Design</p>
+                      </div>
+                      <div className="content">
+                        <DoneIcon
+                          sx={{
+                            marginLeft: '30px',
+                            marginRight: '10px',
+                            color: 'green',
+                            fontSize: '20px',
+                          }}
+                        />
+                        <p>Graphics Design / Branding</p>
+                      </div>
                     </div>
                   </BoxGrid>
                 </Tilt>
               </Grid>
               <Grid item xs={12} sm={4}>
               <Tilt
-                  tiltMaxAngleX={40}
-                  tiltMaxAngleY={40}
+                  tiltMaxAngleX={22}
+                  tiltMaxAngleY={22}
                   perspective={1000}
                   transitionSpeed={1000}
                   scale={1.01}
@@ -237,7 +285,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Web Development</p>
+                      <p>Hardware Maintainace and Sales</p>
                     </div>
                     <div
                       className="content"
@@ -250,7 +298,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Development</p>
+                      <p>CCTV Security</p>
                     </div>
                     <div
                       className="content"
@@ -263,7 +311,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Support</p>
+                      <p>Business Projection</p>
                     </div>
                     <div
                       className="content"
@@ -276,7 +324,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Intergration</p>
+                      <p>Proffesional Photography</p>
                     </div>
                     <div
                       className="content"
@@ -289,7 +337,33 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Migration</p>
+                      <p>Infrastructure Management Solution</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Enterprises Server & Storage Solution</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Business Advisory</p>
                     </div>
                   </div>
                 </BoxGrid>
@@ -297,8 +371,8 @@ function Services() {
               </Grid>
               <Grid item xs={12} sm={4}>
               <Tilt
-                  tiltMaxAngleX={40}
-                  tiltMaxAngleY={40}
+                  tiltMaxAngleX={22}
+                  tiltMaxAngleY={22}
                   perspective={1000}
                   transitionSpeed={1000}
                   scale={1.01}
@@ -321,7 +395,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Web Development</p>
+                      <p>2G/3G/4G/Lte RF Design</p>
                     </div>
                     <div
                       className="content"
@@ -334,7 +408,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Development</p>
+                      <p>Rf Coverage Simulation Plot</p>
                     </div>
                     <div
                       className="content"
@@ -347,7 +421,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Support</p>
+                      <p>RF Optimization</p>
                     </div>
                     <div
                       className="content"
@@ -360,7 +434,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Intergration</p>
+                      <p>RF Frequency Planning</p>
                     </div>
                     <div
                       className="content"
@@ -373,7 +447,59 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Migration</p>
+                      <p>Antenna System Design</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>GIS Servers</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Network Monitoring System</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>System Intergration</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Voice Recording and Playback Solution</p>
                     </div>
                   </div>
                 </BoxGrid>
@@ -381,8 +507,8 @@ function Services() {
               </Grid>
               <Grid item xs={12} sm={4}>
               <Tilt
-                  tiltMaxAngleX={40}
-                  tiltMaxAngleY={40}
+                  tiltMaxAngleX={22}
+                  tiltMaxAngleY={22}
                   perspective={1000}
                   transitionSpeed={1000}
                   scale={1.01}
@@ -403,7 +529,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Web Development</p>
+                      <p>Project Management</p>
                     </div>
                     <div
                       className="content"
@@ -416,7 +542,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Development</p>
+                      <p>Consultancy</p>
                     </div>
                     <div
                       className="content"
@@ -429,7 +555,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Support</p>
+                      <p>Outsourcing</p>
                     </div>
                     <div
                       className="content"
@@ -442,7 +568,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Intergration</p>
+                      <p>Education / Training</p>
                     </div>
                     <div
                       className="content"
@@ -455,7 +581,59 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Migration</p>
+                      <p>Business Proposals</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Artifical intelligence</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Geo Fencing Marketing</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Business Strategies</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Marketing technics and strategies</p>
                     </div>
                   </div>
                 </BoxGrid>
@@ -463,8 +641,8 @@ function Services() {
               </Grid>
               <Grid item xs={12} sm={4}>
               <Tilt
-                  tiltMaxAngleX={40}
-                  tiltMaxAngleY={40}
+                  tiltMaxAngleX={22}
+                  tiltMaxAngleY={22}
                   perspective={1000}
                   transitionSpeed={1000}
                   scale={1.01}
@@ -485,7 +663,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Web Development</p>
+                      <p>Network Security & Threat Management</p>
                     </div>
                     <div
                       className="content"
@@ -498,7 +676,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Development</p>
+                      <p>Network Monitoring</p>
                     </div>
                     <div
                       className="content"
@@ -511,7 +689,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Support</p>
+                      <p>System Intergration</p>
                     </div>
                     <div
                       className="content"
@@ -524,7 +702,7 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Intergration</p>
+                      <p>Network Management</p>
                     </div>
                     <div
                       className="content"
@@ -537,7 +715,59 @@ function Services() {
                           fontSize: '20px',
                         }}
                       />
-                      <p>Application Migration</p>
+                      <p>Inter System Connectivity</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Backbone Transmission Design</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Enterprise-grade LAN Cabing</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Server Maintainace And Support</p>
+                    </div>
+                    <div
+                      className="content"
+                    >
+                      <DoneIcon
+                        sx={{
+                          marginLeft: '30px',
+                          marginRight: '10px',
+                          color: 'green',
+                          fontSize: '20px',
+                        }}
+                      />
+                      <p>Secure Mobile Virtual Network Operation</p>
                     </div>
                   </div>
                 </BoxGrid>
