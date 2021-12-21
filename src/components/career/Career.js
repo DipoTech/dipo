@@ -19,7 +19,7 @@ const Career = () => {
       </div>
       <BoxWrapper>
         <h2 style={{color: '#FFE652', fontSize:'22px'}}>Internship Opportunity</h2>
-        <button className='btn' onClick={() => window.open('https://forms.gle/ufLbvtbasdKaDVmo6')}>Apply Now</button><br />
+        <button className='btn' onClick={() => window.open('https://forms.gle/t88ohkqf8mEoX7hr5')}>Apply Now</button><br />
         <h2 style={{color: '#FFE652', fontSize:'22px'}}>Jobs Opportunities</h2>
         <button className='btn' onClick={() => window.open('https://forms.gle/ufLbvtbasdKaDVmo6')}>Apply Now</button>
       </BoxWrapper>
